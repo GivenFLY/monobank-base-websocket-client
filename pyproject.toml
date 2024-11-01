@@ -16,7 +16,7 @@ classifiers = [
     "Programming Language :: Python :: 3 :: Only",
     "Programming Language :: Python :: 3.12",
 ]
-version = "0.1.0"
+
 packages = [
     { include = "monobank_base_websocket" }
 ]
