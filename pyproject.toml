@@ -2,8 +2,24 @@
 name = "monobank-base-websocket-client"
 version = "0.1.0"
 description = ""
-authors = ["GivenFLY <alexey.givenfly.moshura@gmail.com>"]
 readme = "README.md"
+license = "MIT"
+
+authors = [
+    "Oleksii Moshura"
+]
+classifiers = [
+    "Operating System :: MacOS",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX",
+    "Operating System :: Unix",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.12",
+]
+version = "0.1.0"
+packages = [
+    { include = "monobank_base_websocket" }
+]
 
 [tool.poetry.dependencies]
 python = "^3.12"
