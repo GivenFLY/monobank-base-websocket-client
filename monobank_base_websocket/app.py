@@ -119,7 +119,7 @@ class MonobankBaseWebSocketApp(WebSocketApp):
         """
         Handle incoming messages from the WebSocket.
         """
-        logger.info(f"Received message: {message}")
+        logger.debug(f"Received message: {message}")
         try:
             message_data = json.loads(message)
             if message_data.get("c") == "ping":
@@ -142,7 +142,7 @@ class MonobankBaseWebSocketApp(WebSocketApp):
         trace_id = message_data.get("traceId")
         status = message_data.get("s")
         if status == 200:
-            logger.info(
+            logger.debug(
                 f"Ping acknowledged. connTrace: {conn_trace}, traceId: {trace_id}"
             )
         else:
